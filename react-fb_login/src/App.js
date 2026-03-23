@@ -34,7 +34,7 @@ function App() {
               appId="4382180785395409"
               autoLoad={false}
               fields="name,email,picture"
-              scope="public_profile,user_friends"
+              scope="public_profile"
               callback={responseFacebook}
               icon="fa-facebook"
             />
@@ -55,6 +55,7 @@ function LoginForm() {
       <br />
       <label className="m-2">Email:</label>
       <input type="email" name="email" placeholder="Your Email" />
+      <br />
       <input
         type="submit"
         value="Login"
